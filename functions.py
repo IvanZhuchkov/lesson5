@@ -49,6 +49,11 @@ def fac (n):
 
 
 def dis(st):
+    """
+    This function take a string and convert it in some arifmetic expression.
+
+For correct work you have to use space and don't enter more than one opperation.
+    """
     o=0
     j=0
     for i in range(len(st)):
@@ -83,11 +88,7 @@ def main():
     x=pr(n = "N",i = 15)
     if x==None :
         print("Success")
-    e="""               My calculator
-            Please use space to enter expression
-            
-            """
-    print (e)
+    help(dis)
     st=input("Your expression: ")
     r=dis(st)
     print("Result: ",r)
